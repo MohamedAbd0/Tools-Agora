@@ -1,0 +1,28 @@
+# Development files
+.dart_tool/
+.idea/
+.vscode/
+*.iml
+.metadata
+
+# Build artifacts
+build/
+.packages
+
+# IDE specific files
+*.iws
+*.ipr
+*.iml
+
+# Example project specific files
+example/.dart_tool/
+example/.idea/
+example/.metadata
+example/build/
+example/*.iml
+example/macos/
+example/web/
+example/test/
+
+# Development scripts
+example/dev.sh

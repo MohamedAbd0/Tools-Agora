@@ -1,7 +1,16 @@
 name: agora_token_generator
-description: "Flutter package for generating Agora Dynamic Keys and Access Tokens"
+description: A Flutter package for generating Agora Dynamic Keys and Access Tokens for RTC and RTM services. Supports multiple token types including RTC tokens with UID/Account and RTM tokens.
 version: 0.0.1
 homepage: https://github.com/MohamedAbd0/Tools-Agora/tree/master/DynamicKey/AgoraDynamicKey/dart
+repository: https://github.com/MohamedAbd0/Tools-Agora
+issue_tracker: https://github.com/MohamedAbd0/Tools-Agora/issues
+
+topics:
+  - agora
+  - token
+  - rtc
+  - rtm
+  - authentication
 environment:
   sdk: ^3.6.1
   flutter: ">=1.17.0"

@@ -7,9 +7,10 @@ A comprehensive Flutter web application that demonstrates the Dart implementatio
 ## ✨ Features
 
 ### 🎛️ **Interactive Token Generator**
+
 - **Multiple Token Types**: Support for all Agora token formats:
   - 🎥 RTC Token with UID (numeric user ID)
-  - 👤 RTC Token with Account (string user account)  
+  - 👤 RTC Token with Account (string user account)
   - 🌐 RTC Token with UID=0 (wildcard user)
   - 💬 RTM Token (Real-time Messaging)
   - 🔄 Multi-Service Token (combined RTC + RTM)
@@ -18,6 +19,7 @@ A comprehensive Flutter web application that demonstrates the Dart implementatio
 - **Real-time Validation**: Form validation with helpful error messages
 
 ### 📺 **Video Conference Simulator**
+
 - **Interactive Demo**: Simulate video conference with generated tokens
 - **Participant Management**: Add/remove virtual participants
 - **Control Interface**: Audio/video/screen sharing controls
@@ -25,6 +27,7 @@ A comprehensive Flutter web application that demonstrates the Dart implementatio
 - **Modern UI**: Material 3 design with smooth animations
 
 ### 🎨 **Professional Interface**
+
 - **Responsive Design**: Works perfectly on desktop and mobile
 - **Dark/Light Themes**: Automatic theme adaptation
 - **Loading States**: Smooth loading animations and feedback
@@ -34,9 +37,11 @@ A comprehensive Flutter web application that demonstrates the Dart implementatio
 ## 🚀 Quick Start
 
 ### Online Demo
+
 Visit the live demo: **[https://yourusername.github.io/Tools-Agora/](https://yourusername.github.io/Tools-Agora/)**
 
 ### Local Development
+
 - Web browser with JavaScript enabled
 - Agora App ID and App Certificate (for generating real tokens)
 
