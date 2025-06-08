@@ -18,14 +18,19 @@ class RtmTokenBuilder {
     AccessToken token = AccessToken(
       appId,
       appCertificate,
-      '', // channelName is not used for RTM
-      userId,
+      _getExpireTimestamp(tokenExpireSeconds),
     );
 
     int expireTimestamp = _getExpireTimestamp(tokenExpireSeconds);
 
-    // Add RTM privilege
-    token.addPrivilege(Service.RTM, Privileges.LOGIN, expireTimestamp);
+    // Create RTM service
+    ServiceRTM rtmService = ServiceRTM(userId);
+    
+    // Add RTM login privilege
+    rtmService.addPrivilege(Privileges.LOGIN, expireTimestamp);
+    
+    // Add service to token
+    token.addService(rtmService);
 
     return token.build();
   }

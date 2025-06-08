@@ -2,8 +2,9 @@ import 'package:flutter_test/flutter_test.dart';
 import 'package:agora_token_generator/agora_token_generator.dart';
 
 void main() {
-  const String appId = 'test-app-id';
-  const String appCertificate = 'test-app-certificate';
+  // Use valid 32-character hex strings for App ID and App Certificate
+  const String appId = '058d2e1e94a24c8089b1eef96e3f3e9b';
+  const String appCertificate = '74a10499bd2d4c188b48a89b4c2a47d0';
   const String channelName = 'test-channel';
   const int uid = 12345;
   const String userId = 'test-user';

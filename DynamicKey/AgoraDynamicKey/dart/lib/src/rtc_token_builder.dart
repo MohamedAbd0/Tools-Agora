@@ -22,7 +22,7 @@ class RtcTokenBuilder {
       appId: appId,
       appCertificate: appCertificate,
       channelName: channelName,
-      account: uid.toString(),
+      account: uid == 0 ? '' : uid.toString(),
       tokenExpireSeconds: tokenExpireSeconds,
     );
   }
@@ -46,20 +46,22 @@ class RtcTokenBuilder {
     AccessToken token = AccessToken(
       appId,
       appCertificate,
-      channelName,
-      account,
+      _getExpireTimestamp(tokenExpireSeconds),
     );
 
     int expireTimestamp = _getExpireTimestamp(tokenExpireSeconds);
 
+    // Create RTC service
+    ServiceRTC rtcService = ServiceRTC(channelName, account);
+
     // Add privileges
-    token.addPrivilege(Service.RTC, Privileges.JOIN_CHANNEL, expireTimestamp);
-    token.addPrivilege(
-        Service.RTC, Privileges.PUBLISH_AUDIO_STREAM, expireTimestamp);
-    token.addPrivilege(
-        Service.RTC, Privileges.PUBLISH_VIDEO_STREAM, expireTimestamp);
-    token.addPrivilege(
-        Service.RTC, Privileges.PUBLISH_DATA_STREAM, expireTimestamp);
+    rtcService.addPrivilege(Privileges.JOIN_CHANNEL, expireTimestamp);
+    rtcService.addPrivilege(Privileges.PUBLISH_AUDIO_STREAM, expireTimestamp);
+    rtcService.addPrivilege(Privileges.PUBLISH_VIDEO_STREAM, expireTimestamp);
+    rtcService.addPrivilege(Privileges.PUBLISH_DATA_STREAM, expireTimestamp);
+
+    // Add service to token
+    token.addService(rtcService);
 
     return token.build();
   }
