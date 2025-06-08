@@ -1,24 +1,42 @@
 # Agora Token Generator - Flutter Web Example
 
-A comprehensive Flutter web application that demonstrates the Dart implementation of Agora token generation. This example provides an interactive interface for generating various types of Agora tokens including RTC tokens, RTM tokens, and multi-service tokens.
+🌐 **[Live Demo](https://yourusername.github.io/Tools-Agora/)** | 📚 **[Documentation](../README.md)** | 🔧 **[Setup Guide](../../../GITHUB_PAGES_SETUP.md)**
 
-## Features
+A comprehensive Flutter web application that demonstrates the Dart implementation of Agora token generation. This example provides an interactive interface for generating various types of Agora tokens and includes a video conference simulation demo.
 
-- **Interactive Web Interface**: User-friendly form-based interface for token generation
-- **Multiple Token Types**: Support for all token types:
-  - RTC Token with UID (numeric user ID)
-  - RTC Token with Account (string user account)
-  - RTC Token with UID=0 (wildcard user)
-  - RTM Token (Real-time Messaging)
-  - Multi-Service Token (combined RTC + RTM)
-- **Copy to Clipboard**: Easy token copying with one-click functionality
-- **Pre-filled Test Data**: Default test credentials for quick testing
-- **Token Information**: Built-in help explaining different token types
-- **Responsive Design**: Works on desktop and mobile browsers
+## ✨ Features
 
-## Prerequisites
+### 🎛️ **Interactive Token Generator**
+- **Multiple Token Types**: Support for all Agora token formats:
+  - 🎥 RTC Token with UID (numeric user ID)
+  - 👤 RTC Token with Account (string user account)  
+  - 🌐 RTC Token with UID=0 (wildcard user)
+  - 💬 RTM Token (Real-time Messaging)
+  - 🔄 Multi-Service Token (combined RTC + RTM)
+- **One-Click Copy**: Copy tokens to clipboard with visual feedback
+- **Pre-filled Demo Data**: Test credentials for immediate experimentation
+- **Real-time Validation**: Form validation with helpful error messages
 
-- Flutter SDK (3.6.1 or higher)
+### 📺 **Video Conference Simulator**
+- **Interactive Demo**: Simulate video conference with generated tokens
+- **Participant Management**: Add/remove virtual participants
+- **Control Interface**: Audio/video/screen sharing controls
+- **Token Integration**: Uses your generated tokens in real-time
+- **Modern UI**: Material 3 design with smooth animations
+
+### 🎨 **Professional Interface**
+- **Responsive Design**: Works perfectly on desktop and mobile
+- **Dark/Light Themes**: Automatic theme adaptation
+- **Loading States**: Smooth loading animations and feedback
+- **Error Handling**: Comprehensive error messages and recovery
+- **Accessibility**: Screen reader support and keyboard navigation
+
+## 🚀 Quick Start
+
+### Online Demo
+Visit the live demo: **[https://yourusername.github.io/Tools-Agora/](https://yourusername.github.io/Tools-Agora/)**
+
+### Local Development
 - Web browser with JavaScript enabled
 - Agora App ID and App Certificate (for generating real tokens)
 

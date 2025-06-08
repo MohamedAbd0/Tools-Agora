@@ -1,11 +1,11 @@
 {
-    "name": "example",
-    "short_name": "example",
+    "name": "Agora Token Generator",
+    "short_name": "AgoraTokenGen",
     "start_url": ".",
     "display": "standalone",
-    "background_color": "#0175C2",
-    "theme_color": "#0175C2",
-    "description": "A new Flutter project.",
+    "background_color": "#0084FF",
+    "theme_color": "#0084FF",
+    "description": "Interactive Flutter web demo for generating Agora Dynamic Keys and Access Tokens with video conference simulation.",
     "orientation": "portrait-primary",
     "prefer_related_applications": false,
     "icons": [
